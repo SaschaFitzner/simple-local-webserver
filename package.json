@@ -1,0 +1,12 @@
+{
+  "name": "simple-local-webserver",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "node server.js",
+    "build": "pkg -o simple-local-webserver --targets node18-win-x64 server.js"
+  },
+  "devDependencies": {
+    "express": "^4.18.2",
+    "pkg": "^5.8.1"
+  }
+}
