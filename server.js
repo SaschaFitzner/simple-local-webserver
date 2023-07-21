@@ -1,7 +1,10 @@
 const express = require("express");
+const cors = require('cors');
 const { exec } = require("child_process");
 
 const app = express();
+
+app.use(cors());
 
 // Serve static files from the "public" directory
 app.use(express.static("public"));
